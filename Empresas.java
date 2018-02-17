@@ -1,5 +1,5 @@
 
-public class Individuais
+public class Empresas
 {
     //variaveis de instancia
     private int NIF;
@@ -8,8 +8,7 @@ public class Individuais
     private String morada;
     private String password;
     
-    //construtores
-    public IndividuaisInfo ()
+    public EmpresasInfo ()
     {
         NIF=0;
         email="";
@@ -17,7 +16,7 @@ public class Individuais
         morada="";
         password="";
     }
-    public IndividuaisInfo (int NIF, String email, String nome, String morada, String password)
+    public EmpresasInfo (int NIF, String email, String nome, String morada, String password)
     {
         this.NIF=NIF;
         this.email=email;
@@ -25,7 +24,7 @@ public class Individuais
         this.morada=morada;
         this.password=password;
     }
-    public IndiciduaisInfo (IndividuaisInfo i)
+    public EmpresasInfo (EmpresasInfo i)
     {
         this(i.getNIF(), i.getEmail(), i.getNome(), i.getMorada(), i.getPassword();
     }
@@ -46,7 +45,7 @@ public class Individuais
     {
         if (o==this) {return true;}
         if(o==null || o.getClass() != this.getClass()) {return false;}
-        IndividuaisInfo i = (IndividuaisInfo) o;
+        EmpresasInfo i = (EmpresasInfo) o;
         return i.getNIF().equals(NIF) &&
                f.getEmail().equals(email) &&
                f.getNome().equals(nome) &&
@@ -54,5 +53,5 @@ public class Individuais
                f.getPassword().equals(password);
     }
     
-    public IndividuaisInfo clone() {return new IndividuaisInfo(this);}
-    
+    public EmpresasInfo clone() {return new EmpresasInfo(this);}
+}
