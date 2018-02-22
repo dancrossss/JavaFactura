@@ -36,7 +36,7 @@ public class Empresas
     public String getMorada() {return this.morada;}
     public String getPassword() {return this.password;}
     
-    public void setNIF() {this.NIF=NIF;}
+    public int setNIF() {this.NIF=NIF;}
     public String setEmail() {this.email=email;}
     public String setNome() {this.nome=nome;}
     public String setMorada() {this.morada=morada;}
