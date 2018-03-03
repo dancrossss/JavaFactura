@@ -30,19 +30,39 @@ public class Empresas
     }
     
     //metodos de instancia
-    public int getNIF() {return this.NIF;}
-    public String getEmail() {return this.email;}
-    public String getNome() {return this.nome;}
-    public String getMorada() {return this.morada;}
-    public String getPassword() {return this.password;}
+    public int getNIF(){
+        return this.NIF;
+    }
+    public String getEmail()
+    {return this.email;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public String getMorada(){
+        return this.morada;
+    }
+    public String getPassword(){
+        return this.password;
+    }
     
-    public int setNIF() {this.NIF=NIF;}
-    public String setEmail() {this.email=email;}
-    public String setNome() {this.nome=nome;}
-    public String setMorada() {this.morada=morada;}
-    public String setPassword() {this.password=password;}
-    public boolean equals(Object O)
-    {
+    public int setNIF(int NIF){
+        this.NIF=NIF;
+    }
+    public String setEmail(String email){
+        this.email=email;
+    }
+    public String setNome(String nome){
+        this.nome=nome;
+    }
+    public String setMorada(String morada){
+        this.morada=morada;
+    }
+    public String setPassword(String password){
+        this.password=password;
+    }
+    
+    public boolean equals(Object O){
         if (o==this) {return true;}
         if(o==null || o.getClass() != this.getClass()) {return false;}
         EmpresasInfo i = (EmpresasInfo) o;
@@ -53,5 +73,7 @@ public class Empresas
                f.getPassword().equals(password);
     }
     
-    public EmpresasInfo clone() {return new EmpresasInfo(this);}
+    public EmpresasInfo clone(){
+        return new EmpresasInfo(this);
+    }
 }
